@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/ba_g.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:5px 0;
+
+}
+
+.log {
+    width: 140px;
+    cursor: pointer;
+    text-align: left;
+}
+nav ul{
+flex:1;
+text-align: right;
+padding-right: 30px;
+}
+nav ul li{
+
+    display: inline-block;
+    list-style: none;
+    margin: 1px 30px;
+    font-size: 20px;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    position:absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+.text-box{
+    color: #fff;
+    position:absolute;
+    bottom: 8%;
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 700;
+}
+.text-box h1{
+    font-size: 150px;
+    line-height: 140px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px yellow;
+    background: url(images/black.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+@keyframes back {
+    100%{
+        background-position: 2000px  0;
+    }
+}
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid rgb(205, 102, 146);
+    display: flex;
+    align-items: center;
+}
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.social-icons{
+    position: absolute;
+    right: 10%;
+    bottom: 2%;
+}
+.social-icons{
+    width: 0px;
+    display: block;
+    margin: 25px
+}
+.social-icons img{
+    width: 50px;
+    margin: 5px;
+}
+.con{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/ba_g1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    
+    
+}
+.con h1{
+    font-style:oblique;
+    font-size: 80px;
+    text-align: center;
+    line-height: 120px;
+    margin-left: 10px;
+    color: transparent;
+    -webkit-text-stroke: 1px yellow;
+    background: url(images/lion.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+@keyframes back {
+    100%{
+        background-position: 2000px  0;
+    }
+}
+ table,th,
+    td {
+        width: 70%;
+        border: 2px solid rgb(246, 4, 4);
+        margin-top:2%;
+        margin-left: 10%;
+        text-align:center ;
+        font-size: 120%;
+        color: rgb(12, 13, 12);
+    }
+    
+    .projectin{
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/pro_In.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+    }
+    .pr{
+        color: rgb(7, 2, 0);
+        font-size: 20px;
+        border: 10px solid rgb(5, 228, 57);
+        width: 40%;
+        height: 60%;
+        display: flex;
+        margin-top: 2%;
+
+
+    }
+    .pr h1{
+        color:darkorange;
+        font-size: 50px;
+        
+    }
+    .Intern{
+        color: rgb(250, 250, 250);
+        font-size: 25px;
+        border: 10px solid rgb(227, 247, 10);
+        width: 45%;
+        height: 40%;
+        position: relative;
+        text-align: center;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        margin-top: 20%;
+        display: flex;
+}
+.Intern h1{
+    color:darkorange;
+    font-size: 50px;
+    display: flex;
+    
+}
+.prog{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/skill.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2px; 
+    display: flex;  
+}
+.p_s {
+    border: 8px solid rgb(211, 90, 90);
+    width: 30%;
+    height: 55%;
+    display: inline-flex; 
+    margin-top: 5%;
+
+    
+}
+.p_s1 {
+    border: 8px solid rgb(211, 90, 90);
+    width: 35%;
+    height: 30%;
+    display: inline-flex;
+     
+    margin-top: 15%;
+
+}
+.p_s2 {
+    border: 8px solid rgb(211, 90, 90);
+    width: 30%;
+    height: 45%;
+    display: inline-flex;
+    margin-top: 25%;
+}
+.prog nav h1{
+    text-align: center;
+    font-size:50px;
+    font-style: inherit;
+    color: orangered;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(3, 3, 3);
+    background: url(images/lion.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+@keyframes back {
+    100%{
+        background-position: 2000px  0;
+    }
+}
+.prog nav ol li{
+    text-align: left;
+    margin-left: 30px;
+    color: rgb(10, 0, 0);
+    font-size: xx-large;
+    font-style: italic;
+}
+.A_W {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/ACH.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3.0%;
+    position:absolute;
+    
+}
+.acti h1{
+    text-align: center;
+    margin-left: 10%;
+    
+    margin-top: 5%;
+    font-size: 50px;
+    color: rgb(49, 10, 243);
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(253, 78, 9);
+    background: url(images/black.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+@keyframes back {
+    100%{
+        background-position: 2000px  0;
+    }
+}
+.acti  ol {
+    margin-left: 15%;
+    margin-top: 15px;
+    font-size:x-large;
+    color: rgb(12, 11, 12);
+}
+.bio{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/ba_g1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.bio h1{
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(9, 38, 253);
+    background: url(images/black.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+@keyframes back {
+    100%{
+        background-position: 2000px  0;
+    }
+}
+.about1{
+    color: rgb(7, 2, 0);
+    font-size: 20px;
+    display: flex;
+    margin-top: -35%;
+    padding: 3%;
+
+
+}
+ .about{
+    color: #0b0b0b;
+    font-size: 25px;
+    border: 10px solid rgb(227, 247, 10);
+    width: 60%;
+    height: 70%;
+    position: relative;
+    text-align: left;
+    margin-left: 35%;
+    margin-top: 2%;
+    display: flex;
+    font-size: larger;
+}
+.bio h2{
+    text-align: center;
+    padding-left: 2%;
+}
+
+.bio nav h3{
+    font-size: 30px ;
+    padding-left: 2%;
+}
+.bio  nav h5{
+    font-size: 25px ;
+    padding-left: 2%;
+
+}
+.bio  nav h6{
+    font-size: 20px ;
+    padding-left: 2%;
+}
+
+
+
+.CON{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(163, 211, 253);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: fixed;
+
+}
+.CON h1 {
+    color: blue;
+    font-size: 60px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(9, 38, 253);
+    background: url(images/black.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+@keyframes back {
+    100%{
+        background-position: 2000px  0;
+    }
+}
+.CON h2{
+    text-align: center;
+}
+.CON p {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(14, 0, 0);
+    margin-top: 4%;
+}
+.CON b{
+    color: red
+}
+.port{
+    width: 100%;
+    height: 250vh;
+    position: relative;
+    color: aqua;
+    padding: 4%;
+    background-color: black;
+
+
+}
+.port h1{
+    margin-top: 2%;
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(243, 244, 247);
+    background: url(images/black.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;}
